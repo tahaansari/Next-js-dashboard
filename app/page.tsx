@@ -8,7 +8,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 export default function Page() {
-  const status:string = "success"
+  // const status:string = "success"
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className={style.shape}>
@@ -17,13 +17,13 @@ export default function Page() {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            
-          <strong className={clsx('other-classes',
+          {/* className={clsx('other-classes',
             { 
               '!text-red-800': status == 'pending', 
               '!text-green-800': status == 'success',
             }
-            )}>Welcome to Acme.</strong> This is the example for the{' '}
+            )} */}
+          <strong >Welcome to Acme.</strong> This is the example for the{' '}
             {/* <strong className={`${status == 'pending' ? "!text-red-800":"!text-green-800"}`}>Welcome to Acme.</strong> This is the example for the{' '} */}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
@@ -32,13 +32,15 @@ export default function Page() {
           </p>
           <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             
-          <strong className={clsx('other-classes',
+          {/* className={clsx('other-classes',
             { 
               '!text-red-800': status == 'pending', 
               '!text-green-800': status == 'success',
             }
-            )}>Welcome to Acme.</strong> This is the example for the{' '}
-            {/* <strong className={`${status == 'pending' ? "!text-red-800":"!text-green-800"}`}>Welcome to Acme.</strong> This is the example for the{' '} */}
+            )} */}
+          <strong>Welcome to Acme.</strong> This is the example for the{' '}
+             {/* className={`${status == 'pending' ? "!text-red-800":"!text-green-800"}`} */}
+            <strong>Welcome to Acme.</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
             </a>
