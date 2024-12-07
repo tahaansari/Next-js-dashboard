@@ -8,7 +8,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 export default function Page() {
-  const status = "success"
+  const status:string = "success"
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className={style.shape}>
